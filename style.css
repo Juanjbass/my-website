@@ -1,0 +1,93 @@
+/* Style.css - My color scheme and layout */
+
+:root {
+    --bg: #0c5cf0; /* page background */
+    --text: #000000; /* main text color */
+    --accent: #000000; /* buttoms and links */
+    --accent-contrast: #ffffff;
+    --muted: #000000; /* borders, subtle backgrounds */
+}
+
+*{box-sizing: border-box;}
+
+body {
+    margin: 0;
+    font-family: "Trebuchet MS", "Lucida Grande", Lucida, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+    font-size: 150%;
+}
+
+/* top navigation bar */
+nav {
+    background: #ffffff;
+    border-bottom: 10px solid var(--muted);
+    font-family: "Times New Roman", Times, serif; font-size: 20px;
+}
+
+.navbar {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}    
+.navbar img.logo { height: 80px;}
+.navbar .spacer { flex:1; }
+
+/* links styled like buttoms */
+a.btn {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 10px;
+    text-decoration: none;
+    background: var(--accent);
+    color: var(--accent-contrast);
+    border: 1px solid var(--accent);
+    transition: transform 0.05s ease, opacity 0.2s ease;
+}
+a.btn:hover { opacity: 0.6; }
+a.btn:active { transform: translateY(1px); }
+
+/* page container */
+.main{
+    max-width: 1400px;
+    margin: 50px auto;
+    padding: 0 16px 48px;
+}
+
+/* heading image block */
+.float-right {
+    display: block;
+    max-width: 250px;
+    width: 100%;
+    margin: 0 auto 20px;
+    float: right;
+    margin-left: 100px;
+}
+
+/*clear-fix for floated elements*/
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* content card */
+.card {
+    background: #ffffff;
+    border: 1px solid var(--muted);
+    border-radius: 30px;
+    padding: 50px 50px;
+    margin: 16px 0;
+}
+
+/* make unordered list clear */
+ul {
+    padding-left: 30px;
+}
+ul li {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css"/>
+    <title>First Page</title>
+</head> 
+<body>
+    <!-- Top navigation buttoms -->
+    <nav>
+        <div class="navbar">
+            <img class="logo" src="images/hlogo.jpg" alt="Site logo"/>
+            <p>Juan Rodriguez</p>
+            <div class="spacer"></div>
+            <a class="btn" href="First_page.html" title="Home page">Home</a>
+            <a class="btn" href="another_page.html" title="This leads you to another page.">About This Project</a>
+        </div>
+    </nav>
+
+    <main class="main">
+        <!-- heading as an image-->
+            <h1 style="color:#ffffff">Welcome to My Website</h1>
+            <!-- paragraph with a floated image-->
+            <div class="card clearfix">
+                <!-- image floated to the right -->
+                     <img class="float-right" src="images/logo.jpg" alt="logo on the right" />
+                <p> My name is Juan Rodriguez, and I am currently studying Computer Science because I have always been curious about how technology 
+                    works and how it can solve real-world problems. I enjoy learning how to code, build programs, and understand the logic behind 
+                    computers. My goal is to develop strong technical skills that I can use to create practical and innovative solutions in the future.
+                </p>
+                <p>This is my first website, and I created it as part of my learning journey in web development. I wanted to understand how HTML and CSS 
+                    work together to build and style web pages. Making this site helped me practice adding images, links, and layouts, and it is exciting 
+                    to see how small pieces of code come together to create something visual and interactive on the screen. 
+                </p>
+            </div>
+
+            <!-- Unordered list-->
+            <div class="card">
+                <h2>Things I like:</h2>
+                <ul style="list-style-type:square;">
+                    <li>Coding</li>
+                    <li>Music</li>
+                    <li>Traveling</li>
+                    <li>Soccer</li>
+                </ul>
+            </div>
+
+            <!-- link to the other page with a tooltip-->
+             <div class="card">
+                <p>
+                    <a href="another_page.html" title="This leads you to another page.">Go to the other page</a>
+                </p>
+
+                <!-- Image as a link -->
+                <a href="another_page.html" title="This leads you to another page.">
+                    <img src="images/Next.png" title="Next Page" alt="Next page" style="max-width: 200px; width: 100%; border-radius: 10px; border: 1px solid #000000;"/>
+                </a>
+            </div>
+    </main>
+</body>   
+</html>
